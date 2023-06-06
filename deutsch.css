@@ -1,0 +1,19 @@
+h1 {
+    color: darkgreen;
+    text-align:center;
+}
+
+img {
+    width: 30%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+div {
+    text-align:center;
+}
+
+.start-btn {
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -2,39 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href=""/>
     <title>Вчимо німецьку разом</title>
-    <style>
-        h1 {
-            color: darkgreen;
-            text-align:center;
-        }
-        
-        img {
-            width: 30%;
-        }
-        div {
-            text-align:center;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="deutsch.css"/>
   </head>
   <body>
     <h1 id="text"></h1>
+    <div>text</div>
+    <div>
+      <button onclick="firstStep();" class="start-btn">start</button>
+    </div>
+    <div id="hamster"></div>
+    <div class="pic"><img id="picture" src="cat.jpg"></div>
+    <div>
+      <h2 id="question"></h2>
+      <button onclick="yes();">Ja</button>
+      <button onclick="no();">Nein</button>
 
-<div>text</div>
-<div><button onclick="nextStep();">start</button></div>
-<div><img id = "picture" src="cat.jpg"></div>
-<div>
-    <h2 id="question"></h2>
-
-   <button>Ja</button>
-   <button>Nein</button>
-
+        </div>
+        </div>
+      <div id="results">
+        <p>Правильні відповіді:<span id="correctResults"></span></p>
+        <p>Неправильні відповіді:<span id="incorrectResults"></span></p>
       </div>
-<div>allert</div> 
-    
-<script type="text/javascript" src="german.js"></script>
+      
+  <script type="text/javascript" src="german.js"></script>
   </body>
 </html>
