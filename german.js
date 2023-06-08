@@ -16,11 +16,15 @@ var correctSum = 0
 
 var incorrectSum = 0
 
+function firstStep(){
+    document.getElementById("hamster").style.display = "inline";
+}
+
+
 function nextStep() {
     step = step + 1;
     if (step < pics.length) {
         document.getElementById("picture").src = pics [step];
-        document.getElementById("question").innerHTML = text[step];
         document.getElementById("question").innerHTML = text[step];
     }else{
         document.getElementById("hamster").style.display = "none";

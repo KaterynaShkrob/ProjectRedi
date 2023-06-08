@@ -1,7 +1,26 @@
-h1 {
-    color: darkgreen;
-    text-align:center;
+body {
+    background-image: url(deutsch-als.jpg);
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
+h1 {
+    color: #18600c;
+    text-align:center;
+    font-family: cursive;
+    font-size: 80px;
+    text-shadow: 2px 2px 5px rgb(1, 1, 1);
+}
+
+.text {
+text-align: center;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 16px;
+font-weight:bold;
+
+}
+
 
 img {
     width: 30%;
@@ -14,6 +33,21 @@ div {
 }
 
 .start-btn {
+    background-color: rgb(146, 150, 153);
+    color: rgb(7, 7, 52);
+    font-family: monospace;
+    font-weight:bold;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 12px;
+    font-size: 52px;
+    position: absolute;
+    top: 245px;
+    left: 1000px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    padding:5px;
+
+}
+.start-btn:hover {
+    background-color: rgb(60, 177, 78);
+    transition: 0.7s;
 }
