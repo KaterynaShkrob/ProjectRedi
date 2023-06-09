@@ -1,11 +1,11 @@
 var test="Німецька з нуля";
 document.getElementById("text").innerHTML = test;
 document.getElementById("hamster").style.display = "none";
-
+ 
 var step=0
 document.getElementById("results").style.display = "none";
 
-var pics = ["cat.jpg", "dog.jpg", "hamster.jpg"] 
+var pics = ["katze.jpg", "mops.jpg", "ham.jpg"] 
 
 var text = ["Ist das eine Katze?", "Ist das ein Schaf?", "Ist das ein Kanninchen?"]
 document.getElementById("question").innerHTML = text[step];
@@ -18,8 +18,8 @@ var incorrectSum = 0
 
 function firstStep(){
     document.getElementById("hamster").style.display = "inline";
+    document.getElementById("second").style.display = "none";
 }
-
 
 function nextStep() {
     step = step + 1;

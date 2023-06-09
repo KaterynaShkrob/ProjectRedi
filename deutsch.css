@@ -1,10 +1,26 @@
-body {
-    background-image: url(deutsch-als.jpg);
-    background-position: center;
-    background-attachment: fixed;
+body{
+    display: grid;
+    margin: 0;
 }
 
+.basis{
+    background-image: url(denken.jpg);
+    background-position: right;
+    background-size: 150px;
+    background-repeat: no-repeat;
+    margin-right: 80px;
+}
 
+.firstPic {
+    background-image: url(deutsch-als.jpg);
+    height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+  
 h1 {
     color: #18600c;
     text-align:center;
@@ -14,18 +30,21 @@ h1 {
 }
 
 .text {
-text-align: center;
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-font-size: 16px;
-font-weight:bold;
-
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight:bold;
 }
 
-
 img {
-    width: 30%;
-    max-height: 300px;
-    object-fit: cover;
+    width: 40%;
+    max-height: 400px;
+}
+
+h2 {
+color: darkslategrey;
+font-family: monospace;
+font-size: 30px;
 }
 
 div {
@@ -33,7 +52,7 @@ div {
 }
 
 .start-btn {
-    background-color: rgb(146, 150, 153);
+    background-color: rgb(204, 209, 212);
     color: rgb(7, 7, 52);
     font-family: monospace;
     font-weight:bold;
@@ -45,9 +64,42 @@ div {
     left: 1000px;
     box-shadow: 0px 0px 2px 2px rgb(0,0,0);
     padding:5px;
-
 }
+
 .start-btn:hover {
     background-color: rgb(60, 177, 78);
     transition: 0.7s;
+}
+
+.yes-btn{
+    color: rgba(32, 205, 101, 0.809);
+    font-family: cursive;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 20px;
+    width: 75px;
+    position: absolute;
+    top: 480px;
+    left: 560px;
+}
+
+.no-btn{
+    color: rgb(176, 21, 21);
+    font-family: cursive;
+    font-weight:bold;
+    cursor: pointer;
+    border-radius: 12px;
+    font-size: 20px;
+    width: 75px;
+    position: absolute;
+    top: 480px;
+    left: 655px;
+}
+
+.finish{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    color: darkred;
 }

@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="deutsch.css"/>
   </head>
   <body>
-    <div id="second">
+    <div class="firstPic" id="second">
       <h1 id="text"></h1>
     <div class="text">
       <p>Привіт! Раді бачити тебе на нашому сайті&#128522;</p>
@@ -18,17 +18,17 @@
     </div>
     </div>
     <div id="hamster" style="display: none;">
-    <div class="pic"><img id="picture" src="cat.jpg"></div>
-    <div>
-      <h2 id="question"></h2>
-      <button onclick="yes();">Ja</button>
-      <button onclick="no();">Nein</button>
-
-        </div>
-        </div>
-      <div id="results" style="display: none;">
-        <p>Правильні відповіді:<span id="correctResults"></span></p>
-        <p>Неправильні відповіді:<span id="incorrectResults"></span></p>
+      <div class="basis">
+        <div class="pic"><img id="picture" src="katze.jpg"></div>
+        <h2 id="question"></h2>
+        <button onclick="yes();" class="yes-btn">Ja</button>
+        <button onclick="no();" class="no-btn">Nein</button>
+    </div>
+      </div>
+    <div id="results" class="finish" style="display: none;">
+        <p>Ваш результат:</p>
+        <p>Правильні відповіді: <span id="correctResults"></span></p>
+        <p>Неправильні відповіді: <span id="incorrectResults"></span></p>
       </div>
       
   <script type="text/javascript" src="german.js"></script>
